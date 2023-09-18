@@ -1,5 +1,9 @@
 /****** Let's style our h1 & h2 headings *******/
-
+h1, h2{
+  text-align: center;
+  margin: 10px;
+  font-size: 200%;
+}
 
 /* 1. Make the text centered */
 
@@ -7,13 +11,54 @@
 
 /* 3. Font size should be twice the normal size  */
 
+.grid{
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 10px;
+  background-color: #91f321;
+  background-image: url("../images/background.jpg");
+  border: 3px solid black;
+  border-radius: 20px;
+  justify-content: space-around;
+}
 
 
 
 
+.grid div{
+  border: 5px solid white;
+  background-color: rgba(231, 157, 224, 0.5);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item2, .item5{
+  grid-column-start: 3;
+
+}
+
+.item3{
+  grid-column-start: 2;
+  
+}
+
+.item4{
+  grid-column-start: 1;
+  
+}
 
 
+.item_a{
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
 
+.item_b{
+  grid-column-start: 3;
+}
   /******* style the grid container  *******/
 
   /* 1. Give it a width of 800px */
